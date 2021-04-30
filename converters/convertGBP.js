@@ -8,7 +8,7 @@ const RATES = {
 
 // Conversion function
 function convertToGBP(value, fromCurrency) {
-    if (typeof value == 'number' && value >= 0) {
+    if (value instanceof number && value >= 0) {
         if (RATES[fromCurrency]) {
             return (value / RATES[fromCurrency]).toFixed(2);
         }
