@@ -1,24 +1,16 @@
-
 // Central controller for conversion
 function convertController(convertTo, convertVal, convertFrom) {
     switch (convertTo) {
         case "USD":
-            convertToUSD(convertVal, convertFrom);
-            break;
+            return convertToUSD(convertVal, convertFrom);
         case "GBP":
-            convertToGBP(convertVal, convertFrom);
-            break;
+            return convertToGBP(convertVal, convertFrom);
         case "EUR":
-            convertToEUR(convertVal, convertFrom);
-            break;
+            return convertToEUR(convertVal, convertFrom);
         case "RUB":
-            convertToRUB(convertVal, convertFrom);
-            break;
+            return convertToRUB(convertVal, convertFrom);
         default:
-            console.log("Unknown currency type");
+            console.log("Unknown currency type: " + convertTo);
+            return 0;
     }
-}
-
-module.exports = {
-    convertController
 }
