@@ -1,6 +1,7 @@
 
 // Exchange rates
-const RATES = {
+const RUB_RATES = {
+    RUB: 1.00,
     GBP: 0.0096, 
     EUR: 0.011,
     USD: 0.013 
@@ -8,15 +9,15 @@ const RATES = {
 
 // Conversion function
 function convertToRUB(value, fromCurrency) {
-    if (typeof value == 'number' && value >= 0) {
-        if (RATES[fromCurrency]) {
-            return (value / RATES[fromCurrency]).toFixed(2);
+    if (typeof value === 'number' && value >= 0) {
+        if (RUB_RATES[fromCurrency]) {
+            return (value / RUB_RATES[fromCurrency]).toFixed(2);
         }
     }
     return 0;
 }
 
-// Exports
+// Exports for `npm test` (jest)
 module.exports = {
     convertToRUB
-};
+}

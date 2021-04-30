@@ -39,14 +39,18 @@
     <button class="form__button" type="submit" onclick="grabValuesFromDOM()">Convert</button>
     </div>
     </main>
-<script src="converters/convertController.js"></script>
 <script>
     function grabValuesFromDOM() {
-        let convertVal  = document.getElementById("currency_value");
-        let convertFrom = document.getElementById("currency_type-from");
-        let convertTo   = document.getElementById("currency_type-to");
-        convertController(convertFrom, convertVal, convertTo);
+        let convertVal  = document.getElementById("currency_value").value;
+        let convertFrom = document.getElementById("currency_type-from").value;
+        let convertTo   = document.getElementById("currency_type-to").value;
+        let outputBox   = document.getElementById("converted_output");
+        let result      = convertController(convertFrom, convertVal, convertTo);
+        outputBox.value = result;
     }
 </script>
+<script src="./converters/convertController.js"></script>
+<script src="./converters/convertToGBP.js"></script>
+<script src="./converters/convertToRUB.js"></script>
 </body>
 </html>
