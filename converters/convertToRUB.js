@@ -11,7 +11,7 @@ const RUB_RATES = {
 function convertToRUB(value, fromCurrency) {
     if (value >= 0) {
         if (RUB_RATES[fromCurrency]) {
-            return (value * RUB_RATES[fromCurrency]).toFixed(2);
+            return (value / RUB_RATES[fromCurrency]).toFixed(2);
         }
     }
     return 0;

@@ -1,5 +1,5 @@
 // Central controller for conversion
-function convertController(convertTo, convertVal, convertFrom) {
+function convertController(convertFrom, convertVal, convertTo) {
     switch (convertTo) {
         case "USD":
             return convertToUSD(convertVal, convertFrom);

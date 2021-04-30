@@ -1,12 +1,10 @@
-const { convertToGBP } = require('../converters/convertGBP')
-
 describe("TEST: convertToGBP()", () => {
     test("Smoke Test", () => {
         expect(1).toBe(1);
     });
 });
 
-describe('Testing the convertGBP function', () => {
+describe('Testing the convertToGBP() function', () => {
     it('Tests for valid inputs', () => {
         expect(convertToGBP(100, 'EUR')).toBe('86.96')
         expect(convertToGBP(100, 'USD')).toBe('71.43')

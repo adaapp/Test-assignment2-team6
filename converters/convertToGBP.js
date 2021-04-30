@@ -11,7 +11,7 @@ const GBP_RATES = {
 function convertToGBP(value, fromCurrency) {
     if (value >= 0) {
         if (GBP_RATES[fromCurrency]) {
-            return (value * GBP_RATES[fromCurrency]).toFixed(2);
+            return (value / GBP_RATES[fromCurrency]).toFixed(2);
         }
     }
     return 0;
