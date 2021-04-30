@@ -9,6 +9,8 @@ function convertController(convertFrom, convertVal, convertTo) {
             return convertToEUR(convertVal, convertFrom);
         case "RUB":
             return convertToRUB(convertVal, convertFrom);
+        case "USD":
+          return convertToUSD(convertVal, convertFrom);
         default:
             console.log("Unknown currency type: " + convertTo);
             return 0;
