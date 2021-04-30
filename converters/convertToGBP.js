@@ -9,10 +9,15 @@ const GBP_RATES = {
 
 // Conversion function
 function convertToGBP(value, fromCurrency) {
-    if (value >= 0) {
+    if (typeof value === 'number' && value >= 0) {
         if (GBP_RATES[fromCurrency]) {
             return (value / GBP_RATES[fromCurrency]).toFixed(2);
         }
     }
     return 0;
+}
+
+// Exports for `npm test` (jest)
+module.exports = {
+    convertToGBP
 }

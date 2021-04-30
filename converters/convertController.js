@@ -14,3 +14,8 @@ function convertController(convertFrom, convertVal, convertTo) {
             return 0;
     }
 }
+
+// Exports for `npm test` (jest)
+module.exports = {
+    convertController
+}
