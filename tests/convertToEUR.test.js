@@ -8,14 +8,14 @@ describe("TEST: convertToEUR()", () => {
 
 describe('Testing the convertToEUR() function', () => {
     it('Tests for valid inputs', () => {
-        expect(convertToEUR(100, 'RUB')).toEqual(1.10);
-        expect(convertToEUR(100, 'USD')).toEqual(82.64);
-        expect(convertToEUR(100, 'GBP')).toEqual(114.94);
+        expect(Number(convertToEUR(100, 'RUB'))).toEqual(1.10);
+        expect(Number(convertToEUR(100, 'USD'))).toEqual(82.64);
+        expect(Number(convertToEUR(100, 'GBP'))).toEqual(114.94);
     });
     it('Tests for invalid inputs', () => {
-        expect(convertToEUR('500', 'EUR')).toEqual(0);
-        expect(convertToEUR(500, 'GHJ')).toEqual(0);
-        expect(convertToEUR(undefined, 'BNM')).toEqual(0);
-        expect(convertToEUR()).toEqual(0);
+        expect(Number(convertToEUR('500', 'EUR'))).toEqual(0);
+        expect(Number(convertToEUR(500, 'GHJ'))).toEqual(0);
+        expect(Number(convertToEUR(undefined, 'BNM'))).toEqual(0);
+        expect(Number(convertToEUR())).toEqual(0);
     });
 });

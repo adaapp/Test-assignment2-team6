@@ -8,14 +8,14 @@ describe("TEST: convertToUSD()", () => {
 
 describe('Testing the convertToUSD() function', () => {
     it('Tests for valid inputs', () => {
-        expect(convertToUSD(100, 'RUB')).toEqual(1.33);
-        expect(convertToUSD(100, 'EUR')).toEqual(120.48);
-        expect(convertToUSD(100, 'GBP')).toEqual(138.89);
+        expect(Number(convertToUSD(100, 'RUB'))).toEqual(1.33);
+        expect(Number(convertToUSD(100, 'EUR'))).toEqual(120.48);
+        expect(Number(convertToUSD(100, 'GBP'))).toEqual(138.89);
     });
     it('Tests for invalid inputs', () => {
-        expect(convertToUSD('500', 'USD')).toEqual(0);
-        expect(convertToUSD(500, 'GHJ')).toEqual(0);
-        expect(convertToUSD(undefined, 'BNM')).toEqual(0);
-        expect(convertToUSD()).toEqual(0);
+        expect(Number(convertToUSD('500', 'USD'))).toEqual(0);
+        expect(Number(convertToUSD(500, 'GHJ'))).toEqual(0);
+        expect(Number(convertToUSD(undefined, 'BNM'))).toEqual(0);
+        expect(Number(convertToUSD())).toEqual(0);
     });
 });
