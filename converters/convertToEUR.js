@@ -1,6 +1,6 @@
 
 // Exchange rates
-const RUB_RATES = {
+const EUR_RATES = {
     EUR: 1.000,
     GBP: 0.870, 
     USD: 1.210,
@@ -10,8 +10,8 @@ const RUB_RATES = {
 // Conversion function
 function convertToEUR(value, fromCurrency) {
     if (typeof value === 'number' && value >= 0) {
-        if (RUB_RATES[fromCurrency]) {
-            return (value / RUB_RATES[fromCurrency]).toFixed(2);
+        if (EUR_RATES[fromCurrency]) {
+            return (value / EUR_RATES[fromCurrency]).toFixed(2);
         }
     }
     return 0;
