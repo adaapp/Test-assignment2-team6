@@ -16,5 +16,6 @@ describe('Testing the convertGBP function', () => {
         expect(convertToGBP('500', 'EUR')).toBeFalsy()      
         expect(convertToGBP(500, 'GHJ')).toBeFalsy() 
         expect(convertToGBP(undefined, 'BNM')).toBeFalsy()
+        expect(convertToGBP()).toBeFalsy()
     })
 })

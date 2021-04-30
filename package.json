@@ -4,7 +4,7 @@
   "description": "google meet- https://meet.google.com/hjn-pqbs-fio",
   "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
