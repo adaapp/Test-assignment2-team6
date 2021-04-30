@@ -66,6 +66,27 @@ button {
     background-color: #1f5002;
 }
 
+.label__style {
+    padding-left: 0.8rem;
+    width: 1rem;
+    padding-right: 0.8rem;
+    padding-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 3rem;
+    display: block;
+    color: #696969
+}
+
+.result {
+    width: 100%;
+    min-height: 5rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
 
 
     
