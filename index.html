@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <main class="container">
+    <h1>Currency Converter</h1>
+    <label class="label__style" style="width:10rem">Enter a value:</label>
+    <form class="form">
+        <div class="form__row">
+            <label class="label__style">FROM: </label>
+            <select class="form__dropdown" id="currency_type-from">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <input class="form__input" id="currency_value" type="number" placeholder="e.g. 5.00" required autofocus>
+        </div>
+        <div class="form__row">
+            <label class="label__style">TO: </label>
+            <select class="form__dropdown" id="currency_type-to">
+                <option value="USD">USD</option>
+                <option value="GBP">GBP</option>
+                <option value="EUR">EUR</option>
+            </select>
+
+            <input class="form__input" id="converted_output" type="number" placeholder="Output" required autofocus disabled>
+        </div>
+    </form>
+    <div class="result">
+        <button class="form__button" type="submit" onclick="convertCurrency()">Convert</button>
+    </div>
+    </main>
+<script src="script.js"></script>
+</body>
+</html>
