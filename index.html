@@ -42,6 +42,7 @@
 <script>
     function grabValuesFromDOM() {
         let convertVal  = document.getElementById("currency_value").value;
+        convertVal      = Number(convertVal);
         let convertFrom = document.getElementById("currency_type-from").value;
         let convertTo   = document.getElementById("currency_type-to").value;
         let outputBox   = document.getElementById("converted_output");
@@ -52,5 +53,7 @@
 <script src="./converters/convertController.js"></script>
 <script src="./converters/convertToGBP.js"></script>
 <script src="./converters/convertToRUB.js"></script>
+<script src="./converters/convertToUSD.js"></script>
+<script src="./converters/convertToEUR.js"></script>
 </body>
 </html>
