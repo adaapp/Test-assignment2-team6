@@ -1,4 +1,3 @@
-
 // Exchange rates
 const RUB_RATES = {
     RUB: 1.00,

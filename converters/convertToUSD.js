@@ -7,9 +7,7 @@ const USD_RATES = {
 };
 
 // Conversion function
-
 function convertToUSD(value, fromCurrency) {
-
     if (typeof value === 'number' && value >= 0) {
         if (USD_RATES[fromCurrency]) {
             return (value / USD_RATES[fromCurrency]).toFixed(2);

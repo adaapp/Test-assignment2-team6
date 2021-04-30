@@ -1,4 +1,3 @@
-
 // Exchange rates
 const EUR_RATES = {
     EUR: 1.000,

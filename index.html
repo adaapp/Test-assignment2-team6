@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Currency Converter</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
-    <main class="container">
-    <h1>Currency Converter!</h1>
-    <label class="label__style" style="width:10rem">Enter a value:</label>
-    <form class="form">
-        <div class="form__row">
-            <label class="label__style">FROM: </label>
-            <select class="form__dropdown" id="currency_type-from">
-                <option value="USD">USD</option>
-                <option value="GBP">GBP</option>
-                <option value="EUR">EUR</option>
-                <option value="RUB">RUB</option>
-            </select>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Currency Converter</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Currency Converter!</h1>
+            <label class="label__style" style="width:10rem">Enter a value:</label>
+            <form class="form">
+                <div class="form__row">
+                    <label class="label__style">FROM: </label>
+                    <select class="form__dropdown" id="currency_type-from">
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                    </select>
 
-            <input class="form__input" id="currency_value" type="number" placeholder="e.g. 5.00" required autofocus>
-        </div>
-        <div class="form__row">
-            <label class="label__style">TO: </label>
-            <select class="form__dropdown" id="currency_type-to">
-                <option value="USD">USD</option>
-                <option value="GBP">GBP</option>
-                <option value="EUR">EUR</option>
-                <option value="RUB">RUB</option>
-            </select>
+                    <input class="form__input" id="currency_value" type="number" placeholder="e.g. 5.00" required autofocus>
+                </div>
+                <div class="form__row">
+                    <label class="label__style">TO: </label>
+                    <select class="form__dropdown" id="currency_type-to">
+                        <option value="USD">USD</option>
+                        <option value="GBP">GBP</option>
+                        <option value="EUR">EUR</option>
+                        <option value="RUB">RUB</option>
+                    </select>
 
-            <input class="form__input" id="converted_output" type="number" placeholder="Output" required autofocus disabled>
-        </div>
-    </form>
-    <div class="result">
-    <button class="form__button" type="submit" onclick="grabValuesFromDOM()">Convert</button>
-    </div>
-    </main>
-<script>
-    function grabValuesFromDOM() {
-        let convertVal  = document.getElementById("currency_value").value;
-        let convertFrom = document.getElementById("currency_type-from").value;
-        let convertTo   = document.getElementById("currency_type-to").value;
-        let outputBox   = document.getElementById("converted_output");
-        let result      = convertController(convertFrom, convertVal, convertTo);
-        outputBox.value = result;
-    }
-</script>
-<script src="./converters/convertController.js"></script>
-<script src="./converters/convertToGBP.js"></script>
-<script src="./converters/convertToRUB.js"></script>
-</body>
+                    <input class="form__input" id="converted_output" type="number" placeholder="Output" required autofocus disabled>
+                </div>
+            </form>
+            <div class="result">
+                <button class="form__button" type="submit" onclick="grabValuesFromDOM()">Convert</button>
+            </div>
+        </main>
+        <script>
+            function grabValuesFromDOM() {
+                let convertVal  = Number(document.getElementById("currency_value").value);
+                let convertFrom = document.getElementById("currency_type-from").value;
+                let convertTo   = document.getElementById("currency_type-to").value;
+                let outputBox   = document.getElementById("converted_output");
+                let result      = convertController(convertFrom, convertVal, convertTo);
+                outputBox.value = result;
+            }
+        </script>
+        <script src="./converters/convertToGBP.js"></script>
+        <script src="./converters/convertToRUB.js"></script>
+        <script src="./converters/convertToUSD.js"></script>
+        <script src="./converters/convertToEUR.js"></script>
+        <script src="./converters/convertController.js"></script>
+    </body>
 </html>
