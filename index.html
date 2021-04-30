@@ -7,7 +7,6 @@
     <title>Currency Converter</title>
     <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
     <main class="container">
     <h1>Currency Converter!</h1>
@@ -37,17 +36,9 @@
         </div>
     </form>
     <div class="result">
-        <button class="form__button" type="submit" onclick="grabValuesFromDOM();">Convert</button>
+        <button class="form__button" type="submit">Convert</button>
     </div>
     </main>
-<script src="converters/convertController.js"></script>
-<script>
-    function grabValuesFromDOM() {
-        let convertVal  = document.getElementById("currency_value");
-        let convertFrom = document.getElementById("currency_type-from");
-        let convertTo   = document.getElementById("currency_type-to");
-        convertController(convertFrom, convertVal, convertTo);
-    }
-</script>
+<script src="script.js"></script>
 </body>
 </html>
