@@ -31,3 +31,17 @@ In this case :
 <img width="1792" alt="Screenshot 2021-04-30 at 12 18 22" src="https://user-images.githubusercontent.com/79159518/116688327-78bd2f00-a9ae-11eb-8405-2715148bcf99.png">
 
 This shows the performance, accessibility and best practices of the website. It is used for the developer to understand where the website may be lacking and highlight sections of the website that need improvement.
+
+## FeedBack based on other Peers 
+We decided to create a feedback form for the rest of our peers to complete. We have included a screenshot of our feedback form below;
+<img width="1774" alt="Screenshot 2021-04-30 at 14 54 07" src="https://user-images.githubusercontent.com/79159518/116704998-f63f6a00-a9c3-11eb-83e2-e8ef3a6a5082.png">
+
+These are the responses we received ;
+
+<img width="798" alt="Screenshot 2021-04-30 at 14 47 50" src="https://user-images.githubusercontent.com/79159518/116704525-68637f00-a9c3-11eb-914a-4670c9d3a447.png">
+
+Based on these responses we then decided to change the colour/colour theme of our webpage;
+
+<img width="1131" alt="Screenshot 2021-04-30 at 14 51 13" src="https://user-images.githubusercontent.com/79159518/116704655-921ca600-a9c3-11eb-88ad-987f5123eb36.png">
+
+As you can see above we went for more suitable colours based on the feedback we got. 
