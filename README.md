@@ -20,5 +20,7 @@ In this case :
   Fully functioning UI 
 
 
-
+## Lighthouse Accessibility 
 <img width="1792" alt="Screenshot 2021-04-30 at 12 18 22" src="https://user-images.githubusercontent.com/79159518/116688327-78bd2f00-a9ae-11eb-8405-2715148bcf99.png">
+
+This shows the performance, accessibility and best practices of the website. It is used for the developer to understand where the website may be lacking and highlight sections of the website that need improvement.
