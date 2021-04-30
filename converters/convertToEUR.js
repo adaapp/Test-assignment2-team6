@@ -1,9 +1,8 @@
-
 // Exchange rates
 const EUR_RATES = {
-    EUR: 1.000,
-    GBP: 0.870, 
-    USD: 1.210,
+    EUR: 1.00,
+    GBP: 0.87, 
+    USD: 1.21,
     RUB: 90.67
 };
 

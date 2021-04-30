@@ -1,15 +1,21 @@
-const { convertToUSD } = require('../converters/convertToUSD')
+const { convertToUSD } = require('../converters/convertToUSD.js');
 
-describe('Testing the convertUSD function', () => {
+describe("TEST: convertToUSD()", () => {
+    test("Smoke Test", () => {
+        expect(1).toEqual(1);
+    });
+});
+
+describe('Testing the convertToUSD() function', () => {
     it('Tests for valid inputs', () => {
-        expect(convertToUSD(100, 'RUB')).toBe('1.33')
-        expect(convertToUSD(100, 'EUR')).toBe('120.48')
-        expect(convertToUSD(100, 'GBP')).toBe('138.89')
-    })
+        expect(Number(convertToUSD(100, 'RUB'))).toEqual(1.33);
+        expect(Number(convertToUSD(100, 'EUR'))).toEqual(120.48);
+        expect(Number(convertToUSD(100, 'GBP'))).toEqual(138.89);
+    });
     it('Tests for invalid inputs', () => {
-        expect(convertToUSD('500', 'EUR')).toBeFalsy()      
-        expect(convertToUSD(500, 'GHJ')).toBeFalsy() 
-        expect(convertToUSD(undefined, 'BNM')).toBeFalsy()
-        expect(convertToUSD()).toBeFalsy()
-    })
-})
+        expect(Number(convertToUSD('500', 'USD'))).toEqual(0);
+        expect(Number(convertToUSD(500, 'GHJ'))).toEqual(0);
+        expect(Number(convertToUSD(undefined, 'BNM'))).toEqual(0);
+        expect(Number(convertToUSD())).toEqual(0);
+    });
+});

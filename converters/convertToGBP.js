@@ -1,4 +1,3 @@
-
 // Exchange rates
 const GBP_RATES = {
     GBP: 1.00,
