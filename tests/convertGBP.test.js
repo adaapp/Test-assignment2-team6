@@ -12,4 +12,10 @@ describe('Testing the convertGBP function', () => {
         expect(convertToGBP(100, 'USD')).toBe('71.43')
         expect(convertToGBP(100, 'RUB')).toBe('0.96')
     })
+    it('Tests for invalid inputs', () => {
+        expect(convertToGBP('500', 'EUR')).toBeFalsy()      
+        expect(convertToGBP(500, 'GHJ')).toBeFalsy() 
+        expect(convertToGBP(undefined, 'BNM')).toBeFalsy()
+        expect(convertToGBP()).toBeFalsy()
+    })
 })
