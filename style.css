@@ -9,7 +9,7 @@ body {
     background-color:#F0FFFF;
 }
 h1{
-    color: #5F9EA0;
+    color: #FF4500;
     width: 100%;
 }
 
@@ -41,7 +41,7 @@ button {
     padding: 0.5rem;
     width: 20rem;
     background-color: #FFFAF0;
-    border: 2px solid #666;
+    border: 2px solid rgb(211, 12, 12);
     border-radius: 8px;
   
 }
@@ -58,8 +58,8 @@ button {
 .form__dropdown {
     margin-left: 0.2rem;
     padding: 0.2rem;
-    color: #00FFFF;
-    background-color: #5F9EA0;
+    color: #F0FFFF;
+    background-color: #556B2F;
     transition: background-color 0.2s;
 }
 
@@ -75,7 +75,7 @@ button {
     margin-left: 0.5rem;
     margin-right: 3rem;
     display: block;
-    color: #696969
+    color: #0000FF
 }
 
 .result {
