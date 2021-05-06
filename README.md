@@ -1,7 +1,5 @@
 # Assignment2-Team6 - Currency Converter
 
-google meet- https://meet.google.com/hjn-pqbs-fio
-
 ## The link to our website - https://adaapp.github.io/Test-assignment2-team6/
 
 ## Website objectives
