@@ -45,3 +45,33 @@ Based on these responses we then decided to change the colour/colour theme of ou
 <img width="1131" alt="Screenshot 2021-04-30 at 14 51 13" src="https://user-images.githubusercontent.com/79159518/116704655-921ca600-a9c3-11eb-88ad-987f5123eb36.png">
 
 As you can see above we went for more suitable colours based on the feedback we got. 
+
+
+## Sample Test Block 
+Below we have included an example of one of the test blocks we produced in order to check if our program worked correctly. 
+These test check to see if the selected currency has been converted into GBP accurately. We used describe blocks, test blocks and some expect statements in order to test these functions. We also incldued a smoke test to see if the framework was working. 
+
+
+```js
+const { convertToGBP } = require('../converters/convertToGBP.js');
+
+describe("TEST: convertToGBP()", () => {
+    test("Smoke Test", () => {
+        expect(1).toEqual(1);
+    });
+});
+
+describe('Testing the convertToGBP() function', () => {
+    it('Tests for valid inputs', () => {
+        expect(Number(convertToGBP(100, 'EUR'))).toEqual(86.96);
+        expect(Number(convertToGBP(100, 'USD'))).toEqual(71.43);
+        expect(Number(convertToGBP(100, 'RUB'))).toEqual(0.96);
+    });
+    it('Tests for invalid inputs', () => {
+        expect(Number(convertToGBP('500', 'GBP'))).toEqual(0);      
+        expect(Number(convertToGBP(500, 'GHJ'))).toEqual(0);
+        expect(Number(convertToGBP(undefined, 'BNM'))).toEqual(0);
+        expect(Number(convertToGBP())).toEqual(0);
+    });
+});
+```
